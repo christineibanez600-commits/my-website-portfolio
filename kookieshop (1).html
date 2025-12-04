@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Kookies - Home</title>
+   <style>
+       body {
+           font-family: 'Times New Roman', sans-serif;
+           background-color: #F5E6CC;
+           text-align: center;
+           color: #5a3e2b;
+           margin: 0;
+           padding: 0;
+           font-size: 18px;
+       }
+       header {
+           background-color: #d4a373;
+           padding: 10px;
+       }
+       .logo {
+           width: 250px;
+           height: 250px;
+       }
+       .btn {
+           background-color: #b5651d;
+           color: white;
+           padding: 15px 25px;
+           border: none;
+           cursor: pointer;
+           font-size: 17px;
+           margin: 10px;
+           border-radius: 5px;
+           display: inline-block;
+       }
+       .btn:hover {
+           background-color: #8b4513;
+       }
+       nav a {
+           margin: 0 15px;
+           text-decoration: none;
+           color: #5a3e2b;
+           font-weight: bold;
+       }
+       #menu {
+           margin-top: 20px;
+           font-size: 20px;
+       }
+       footer {
+           background-color: #d4a373;
+           padding: 10px;
+           margin-top: 20px;
+           font-size: 20px;
+       }
+       .promo {
+           background-color: #ffcc99;
+           padding: 15px;
+           margin: 20px;
+           border-radius: 5px;
+           font-size: 18px;
+           font-weight: bold;
+           color: #8b4513;
+       }
+       .form-container {
+           display: none;
+           background: white;
+           padding: 25px;
+           border-radius: 7px;
+           width: 90%;
+           max-width: 400px;
+           margin: auto;
+           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+       }
+       input, textarea {
+           width: 100%;
+           padding: 10px;
+           margin: 5px 0;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+       .close-btn {
+           background-color: red;
+           padding: 5px;
+           border: none;
+           color: white;
+           cursor: pointer;
+           float: right;
+       }
+       .button-container {
+           margin-top: 15px;
+       }
+       .about-section {
+           background-color: #fff4e6;
+           color: #5a3e2b;
+           font-family: 'Times New Roman', serif;
+           max-width: 800px;
+           margin: 30px auto;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+           font-size: 18px;
+           text-align: left;
+       }
+       .about-section h2 {
+           font-size: 24px;
+           margin-bottom: 10px;
+           color: #8b4513;
+           text-align: center;
+       }
+       .about-section p {
+           line-height: 1.6;
+       }
+   </style>
+   <script>
+       function openForm() {
+           document.getElementById("orderForm").style.display = "block";
+       }
+       function closeForm() {
+           document.getElementById("orderForm").style.display = "none";
+       }
+   </script>
+</head>
+<body>
+   <header>
+       <img src="cookielogo.jpg.jfif" alt="cookielogo" class="logo" />
+       <h1>KOOKIES BY ELI</h1>
+   </header>
+   <nav>
+       <a href="#menu">Menu</a>
+       <a href="#contact">Contact</a>
+   </nav>
+
+   <div class="promo">
+        Buy 5 Cookies, Get a Free Drink!
+   </div>
+
+   <div class="button-container">
+       <button class="btn" onclick="location.href='#menu'">View Menu</button>
+       <button class="btn" onclick="openForm()">Delivery</button>
+   </div>
+
+   <video width="640" height="360" controls>
+  <source src="cookievid2.mp4" type="video/mp4">
+</video>
+
+   <section id="menu">
+       <h2>Our Menu</h2>
+
+       <h3>Cookies</h3>
+       <ul>
+           <li>Classic Chocolate Chip - ₱90</li>
+           <li>Double Chocolate Chunk - ₱100</li>
+           <li>Peanut Butter Bliss - ₱85</li>
+           <li>Oatmeal Raisin - ₱80</li>
+           <li>White Chocolate Macadamia - ₱95</li>
+           <li>Red Velvet Crinkle - ₱100</li>
+           <li>Matcha Green Tea - ₱95</li>
+           <li>S’mores Delight - ₱100</li>
+           <li>Salted Caramel Pecan - ₱90</li>
+           <li>Strawberry Shortcake Cookies - ₱85</li>
+       </ul>
+
+       <h3>Drinks</h3>
+       <ul>
+           <li>Caramel Macchiato - ₱120</li>
+           <li>Mocha Frappe - ₱140</li>
+           <li>Vanilla Cold Brew - ₱130</li>
+           <li>Cherry Cola Float - ₱100</li>
+           <li>Strawberry Cream Soda - ₱110</li>
+       </ul>
+   </section>
+
+   <section class="about-section">
+       <h2>About Kookies</h2>
+       <p>
+           Kookies is where elegance meets indulgence a sweet escape curated for the modern sweet tooth. We craft handcrafted cookies and drinks using only premium ingredients, with flavors that are as Instagram-worthy as they are irresistible.<br /><br />
+           But behind every batch is a personal story. It all started in a cozy kitchen in her Apartment, where Eli baked her very first cookies on a quiet, rainy afternoon. What began as a simple craving turned into a passion project and eventually, into Kookies. Every treat you taste carries the warmth of home, a sprinkle of love, and the joy of sharing something truly special.<br /><br />
+           From timeless classics to bold new bites, Kookies is here to bring sweetness, style, and soul to your every snack.
+       </p>
+   </section>
+
+   <div id="orderForm" class="form-container">
+       <button class="close-btn" onclick="closeForm()">X</button>
+       <h3>Delivery Order Form</h3>
+       <p><strong>Note:</strong> We only deliver in Taguig City.</p>
+       <form>
+           <input type="text" placeholder="Full Name" required />
+           <input type="text" placeholder="Contact Number" required />
+           <input type="text" placeholder="Address" required />
+           <textarea placeholder="Enter your order details here..." required></textarea>
+           <button class="btn">Submit Order</button>
+       </form>
+   </div>
+
+   <footer id="contact">
+       <p>Location: 25th Avenue, Bonifacio Global City.</p>
+       <p>Contact us: 09563961945</p>
+       <p>Follow us on:</p>
+       <button class="btn" onclick="window.open('https://facebook.com/zel.ibanez', '_blank')">Facebook</button>
+       <button class="btn" onclick="window.open('https://instagram.com/chriselleibanez', '_blank')">Instagram</button>
+   </footer>
+</body>
+</html>
