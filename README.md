@@ -15,7 +15,7 @@ My goal is to create accessible and visually appealing web experiences using cle
 
 You can view the deployed version of this portfolio here:
 
-[**VIEW CHRISTINE'S LIVE PORTFOLIO WEBSITE**](https://christineibanez600-commits.github.io/my-website-portfolio/)
+[**VIEW LIVE PORTFOLIO WEBSITE**](https://christineibanez600-commits.github.io/my-website-portfolio/)
 ---
 
 ## 🚀 Projects and Highlights
